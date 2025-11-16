@@ -110,5 +110,11 @@ pub fn build(b: *std.Build) !void {
     });
     defer src_dir.close();
 
+    const flags = [_][]const u8{"-Isrc"};
+    var it = src_dir.iterate();
+    while (try it.next()) |*entry| {
+        try toolbox.addSource(lib, src_path, entry.name, &flags);
+    }
+
     b.installArtifact(lib);
 }
