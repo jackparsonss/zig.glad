@@ -1,6 +1,6 @@
 .{
     .name = .zig_glad,
-    .version = "0.0.2",
+    .version = "0.0.3",
     .dependencies = .{
         .toolbox = .{
             .url = "git+https://github.com/tiawl/toolbox.git#79c1dffe608a9c4a7dcf11f98f1dc88b9b46e9f5",
