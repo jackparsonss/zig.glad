@@ -8,6 +8,6 @@
         },
     },
     .minimum_zig_version = "0.15.2",
-    .paths = .{""},
+    .paths = .{ "build.zig", "build.zig.zon", "glad" },
     .fingerprint = 0x382b3ea69eabe8e8,
 }
